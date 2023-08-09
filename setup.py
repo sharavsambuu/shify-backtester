@@ -27,7 +27,8 @@ setup(
         ],
     entry_points = {
         'console_scripts': [
-            'binance-download=shify.utilities.data_tools:binance_download'
+            'binance-download=shify.utilities.data_tools:binance_download',
+            'shify=shify.__main__:main'
         ],
     }
 
