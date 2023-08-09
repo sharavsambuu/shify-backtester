@@ -36,6 +36,10 @@ So whats inside my mind are currently followings :
     Package development is like
         pip install e .
 
+    Run algo script
+        shify run -s hello.py
+
+
 # Examples
 
     https://github.com/sharavsambuu/shify-examples
