@@ -9,15 +9,15 @@ The name Shify is just a random name.
 
 So whats inside my mind are currently followings : 
 
-    - Multi universe
-    - Auto caching
-    - Multi bars
-    - Pluggable 
-    - Extensible, ie add other trading cost calculation
-    - Portfolio
-    - Multi Strategy
-    - Asynchronous
-    - Configurable
+    - Multi universe, ie Binance, FX, Stock go on
+    - Auto caching, reading history of universe by cached manner
+    - Multi bars, 1m, 30m, 4h, and also Dollar Bars
+    - Strategy script pluggable, just like Zipline's one
+    - Extensible, ie add other trading cost calculation like spreads, bps etc
+    - Portfolio, filterable by some rules, track individual performance (Strat+Asset) and optimize
+    - Multi Strategy, able to use different strategy with different asset combinations
+    - Configurable, like which universes should I plug or use, which timeframe should I test
+    - Reporing, like portfolio based metrics, individual metrics, live tracking with Probability cones etc
     - Use common libraries like TALib, quantstats
 
 
@@ -49,9 +49,9 @@ So whats inside my mind are currently followings :
 # Tasks
 
     - Universe downloaded, for examples binance
+    - Simple pluggable script
     - 1m bar event streamer from the universe
     - Enable multi timeframes like 5m 15m 30m etc
-    - Simple pluggable script
     - Position trackers
     - Commission calculation based simple BPS
     
