@@ -21,6 +21,16 @@ So whats inside my mind are currently followings :
     - Use common libraries like TALib, quantstats
 
 
+# Install
+
+    pip install git+https://github.com/sharavsambuu/shify-backtester
+
+
+# Examples
+
+    https://github.com/sharavsambuu/shify-examples
+
+
 # Tasks
 
     - Universe downloaded, for examples binance
@@ -38,7 +48,6 @@ So whats inside my mind are currently followings :
     - Talib should be compiled from the source code
         https://github.com/TA-Lib/ta-lib-python
     - Create custom python library
-        https://github.com/MichaelKim0407/tutorial-pip-package
         https://github.com/mike-huls/toolbox
 
 
