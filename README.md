@@ -64,6 +64,8 @@ So whats inside my mind are currently followings :
         https://github.com/TA-Lib/ta-lib-python
     - Create custom python library
         https://github.com/mike-huls/toolbox
+    - Loading python modules
+        https://github.com/stefan-jansen/zipline-reloaded/blob/main/src/zipline/examples/__init__.py
 
 
 
