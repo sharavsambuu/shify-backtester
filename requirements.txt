@@ -8,3 +8,6 @@ quantstats
 streamlit
 pandas
 numpy
+selenium
+beautifulsoup4
+webdriver-manager

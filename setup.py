@@ -19,11 +19,14 @@ setup(
     install_requires=[
         'pandas',
         'numpy',
-        'TA-Lib'
+        'TA-Lib',
+        'selenium',
+        'beautifulsoup4',
+        'webdriver-manager'
         ],
     entry_points = {
         'console_scripts': [
-            'shify-download=shify.utilities.data_tools:download'
+            'binance-download=shify.utilities.data_tools:binance_download'
         ],
     }
 

@@ -29,11 +29,20 @@ So whats inside my mind are currently followings :
 # Usage
 
     Download data from Binance
-        shify-download -e binance -mt spot -s BTCUSDT ETHUSDT BNBUSDT
+        binance-download -t spot -s BTCUSDT ETHUSDT BNBUSDT
+        binance-download -t futures -s BTCUSDT ETHUSDT BNBUSDT
+
+    Package development is like
+        pip install e .
 
 # Examples
 
     https://github.com/sharavsambuu/shify-examples
+
+
+# Some downloadable asset list
+
+    btcusdt ethusdt bnbusdt xrpusdt dogeusdt maticusdt solusdt dotusdt ltcusdt shibusdt trxusdt avaxusdt linkusdt uniusdt atomusdt xmrusdt etcusdt xlmusdt bchusdt filusdt ldousdt hbarusdt aptusdt vetusdt nearusdt apeusdt algousdt qntusdt icpusdt eosusdt grtusdt ftmusdt stxusdt manausdt thetausdt aaveusdt xtzusdt egldusdt cfxusdt flowusdt axsusdt sandusdt imxusdt chzusdt crvusdt cakeusdt opusdt klayusdt snxusdt minausdt dashusdt fxsusdt gmxusdt runeusdt lrcusdt zilusdt rndrusdt maskusdt sxpusdt injusdt 1inchusdt batusdt kavausdt enjusdt cvxusdt woousdt icxusdt compusdt galausdt arusdt oneusdt ensusdt wavesusdt kdausdt kncusdt paxgusdt idusdt renusdt dydxusdt hookusdt 
 
 
 # Tasks
