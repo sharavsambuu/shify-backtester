@@ -22,7 +22,8 @@ setup(
         'TA-Lib',
         'selenium',
         'beautifulsoup4',
-        'webdriver-manager'
+        'webdriver-manager',
+        'click',
         ],
     entry_points = {
         'console_scripts': [
