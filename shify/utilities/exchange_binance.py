@@ -104,15 +104,15 @@ def download(market_type, interval, symbol_list):
                     df = pd.read_csv(csv_path)
                     df = df.rename(columns={"open": "Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume"})
                     df = df.astype({"open_time": "datetime64[ms]"})
-                    df["date"] = df["open_time"]
-                    df = df.set_index("date")
+                    df["datetime"] = df["open_time"]
+                    df = df.set_index("datetime")
                     df = df[['Open', 'High', 'Low', 'Close', 'Volume']]
                     df_list.append(df)
                 else:
                     df = pd.read_csv(csv_path, header=None, names=['open_time','Open','High', 'Low', 'Close', 'Volume', 'close_time', 'quote_volume', 'count', 'taker_buy_volume', 'taker_buy_quote_volume', 'ignore'])
                     df = df.astype({"open_time": "datetime64[ms]"})
-                    df["date"] = df["open_time"]
-                    df = df.set_index("date")
+                    df["datetime"] = df["open_time"]
+                    df = df.set_index("datetime")
                     df = df[['Open', 'High', 'Low', 'Close', 'Volume']]
                     df_list.append(df)
 
