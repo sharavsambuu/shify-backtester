@@ -12,7 +12,10 @@ setup(
     long_description= long_description,
     url='https://github.com/sharavsambuu/shify-backtester',
     license='MIT',
-    packages=['shify'],
+    packages=[
+        'shify',
+        'shify.utilities'
+        ],
     install_requires=[
         'pandas',
         'numpy',
