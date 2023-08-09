@@ -23,7 +23,7 @@ setup(
         ],
     entry_points = {
         'console_scripts': [
-            'shifydownload=shify.utilities.data_tools:download'
+            'shify-download=shify.utilities.data_tools:download'
         ],
     }
 

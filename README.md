@@ -29,7 +29,7 @@ So whats inside my mind are currently followings :
 # Usage
 
     Download data from Binance
-        `shifydownload -e binance -mt spot -s BTCUSDT ETHUSDT BNBUSDT`
+        shify-download -e binance -mt spot -s BTCUSDT ETHUSDT BNBUSDT
 
 # Examples
 
