@@ -2,9 +2,10 @@
 Well, I needed to know whats going on behind the scene.
 And also I want to iterate faster when trying new strategies.
 In that regards, I've already tried some other libraries like Zipline etc
-and I couldn't even bundle 1minute timeframe data but I still Zipline is good approach
-This library gonna become Frankenstein monster so don't expect much.
-The name Shify is just a random name comes my mind.
+and I couldn't even bundle 1minute timeframe data but I still 
+think Zipline's approach to handle the problem is very good.
+This library gonna become Frankenstein's monster so don't expect much.
+The name Shify is just a random name.
 
 So whats inside my mind are currently followings : 
 
