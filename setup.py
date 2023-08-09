@@ -17,5 +17,11 @@ setup(
         'pandas',
         'numpy',
         'TA-Lib'
-        ]
+        ],
+    entry_points = {
+        'console_scripts': [
+            'shifydownload=shify.utilities.data_tools:download'
+        ],
+    }
+
 )

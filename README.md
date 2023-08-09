@@ -26,6 +26,11 @@ So whats inside my mind are currently followings :
     pip install git+https://github.com/sharavsambuu/shify-backtester
 
 
+# Usage
+
+    Download data from Binance
+        `shifydownload -e binance -mt spot -s BTCUSDT ETHUSDT BNBUSDT`
+
 # Examples
 
     https://github.com/sharavsambuu/shify-examples
