@@ -1,2 +1,2 @@
 def say_hello():
-    print("Hello from shiy module.")
+    print("Hello from shify module.")

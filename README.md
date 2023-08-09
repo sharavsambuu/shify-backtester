@@ -30,7 +30,7 @@ So whats inside my mind are currently followings :
     - Position trackers
     - Commission calculation based simple BPS
     
-    - I will add other task when they will comes in my mind...
+    - I will add other tasks when they will comes into my mind...
 
 
 
@@ -39,6 +39,7 @@ So whats inside my mind are currently followings :
         https://github.com/TA-Lib/ta-lib-python
     - Create custom python library
         https://github.com/MichaelKim0407/tutorial-pip-package
+        https://github.com/mike-huls/toolbox
 
 
 
