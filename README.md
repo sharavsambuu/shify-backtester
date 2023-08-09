@@ -19,6 +19,22 @@ So whats inside my mind are currently followings :
     - Use common libraries like TALib, quantstats
 
 
+# Tasks
+
+    - Universe downloaded, for examples binance
+    - 1m bar event streamer from the universe
+    - Enable multi timeframes like 5m 15m 30m etc
+    - Simple pluggable script
+    - Position trackers
+    - Commission calculation based simple BPS
+    
+    - I will add other task when they will comes in my mind...
+
+
+# Setup
+    virtualenv -p pytho3.9 env && source env/bin/activate && pip install -r requirements.txt
+
+
 # References
     - Talib should be compiled from the source code
         https://github.com/TA-Lib/ta-lib-python
