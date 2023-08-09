@@ -18,7 +18,7 @@ def download(market_type, interval, symbol_list):
     print(f"{symbol_list}")
 
     if not market_type in ["spot", "futures"]:
-        print("second argument should be one of spot or futures")
+        print("parameter should be one of spot or futures")
         sys.exit()
 
     for symbol in symbol_list:

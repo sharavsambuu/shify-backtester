@@ -29,8 +29,9 @@ So whats inside my mind are currently followings :
 # Usage
 
     Download data from Binance
-        binance-download -t spot -s BTCUSDT ETHUSDT BNBUSDT
-        binance-download -t futures -s BTCUSDT ETHUSDT BNBUSDT
+        binance-download -h
+        binance-download -t spot -i 1m -s BTCUSDT ETHUSDT BNBUSDT
+        binance-download -t futures -i 1m -s BTCUSDT ETHUSDT BNBUSDT
 
     Package development is like
         pip install e .
