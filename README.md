@@ -20,6 +20,8 @@ So whats inside my mind are currently followings :
 
 
 # References
+    - Talib should be compiled from the source code
+        https://github.com/TA-Lib/ta-lib-python
 
 
 
