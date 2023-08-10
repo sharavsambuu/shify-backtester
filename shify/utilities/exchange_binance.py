@@ -14,8 +14,8 @@ from webdriver_manager.chrome          import ChromeDriverManager
 
 
 def download(market_type, interval, symbol_list):
-    print(f"{market_type}, {interval}")
-    print(f"{symbol_list}")
+    print(f"market type : {market_type}, interval : {interval}")
+    print(f"symbols : {symbol_list}")
 
     if not market_type in ["spot", "futures"]:
         print("parameter should be one of spot or futures")

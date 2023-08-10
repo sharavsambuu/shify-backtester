@@ -29,12 +29,35 @@ So whats inside my mind are currently followings :
 # Usage
 
     Download data from Binance
+
+        binance-download -t <market type> -i <timeframe> -s <list of symbols spaced>
+
         binance-download -h
+
         binance-download -t spot -i 1m -s BTCUSDT ETHUSDT BNBUSDT
         binance-download -t futures -i 1m -s BTCUSDT ETHUSDT BNBUSDT
 
+
+    Download data from MetaTrader5 brokers
+
+        Run MetaTrader5 with wine
+        Check : Tools -> Options -> Expert Advisors -> Allow Algorithmic Trading
+        Select unlimited : Tools -> Options -> Charts -> max bars in chart
+
+        On ubuntu install windows version of python using wine and specify its path and run connector like this one
+        source env/bin/activate && python -m mt5linux "/home/sambu/.wine/drive_c/users/sambu/Local Settings/Application Data/Programs/Python/Python39/python.exe"
+
+        And after we can download any symbols we want like
+        mt5-download -b <broker namespace> -i <timeframe only minute level number> -y <from starting year until now> -s <list of symbols spaced>
+
+        mt5-download -h
+
+        mt5-download -b avatrade -i 1 -y 2000 -s EURUSD USDJPY GBPUSD
+
+
     Package development is like
         pip install e .
+
 
     Run algo script
         shify run -s hello.py

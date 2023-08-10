@@ -17,17 +17,19 @@ setup(
         'shify.utilities'
         ],
     install_requires=[
-        'pandas',
+        'mt5linux',
         'numpy',
         'TA-Lib',
         'selenium',
         'beautifulsoup4',
         'webdriver-manager',
         'click',
+        'pandas==1.5.3',
         ],
     entry_points = {
         'console_scripts': [
             'binance-download=shify.utilities.data_tools:binance_download',
+            'mt5-download=shify.utilities.data_tools:mt5_download',
             'shify=shify.__main__:main'
         ],
     }

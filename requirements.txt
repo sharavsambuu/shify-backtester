@@ -1,3 +1,4 @@
+mt5linux
 scikit-learn
 statsmodels
 matplotlib
@@ -6,9 +7,9 @@ jupyter
 TA-Lib
 quantstats
 streamlit
-pandas
 numpy
 selenium
 beautifulsoup4
 webdriver-manager
 click
+pandas==1.5.3
