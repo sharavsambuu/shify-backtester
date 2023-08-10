@@ -3,6 +3,7 @@ import argparse
 from shify.utilities import exchange_binance as binance
 from shify.utilities import exchange_mt5     as emt5
 
+
 def binance_download():
     parser = argparse.ArgumentParser(description='Data downloader tool for Binance')
     parser.add_argument('-t', '--market_type', help='example : -t futures|spot', required=True)
