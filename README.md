@@ -44,9 +44,15 @@ So whats inside my mind are currently followings :
         Check : Tools -> Options -> Expert Advisors -> Allow Algorithmic Trading
         Select unlimited : Tools -> Options -> Charts -> max bars in chart
 
-        On ubuntu install windows version of python using wine and specify its path and run connector like this one
-        source env/bin/activate && python -m mt5linux "/home/sambu/.wine/drive_c/users/sambu/Local Settings/Application Data/Programs/Python/Python39/python.exe"
+        Follow this instruction
+        https://pypi.org/project/mt5linux/
 
+        Install python3.9 windows version on wine and MetaTrader5 for python on windows as well
+        pip install --upgrade MetaTrader5
+
+        On ubuntu run connector like this one
+        source env/bin/activate && python -m mt5linux "/home/sambu/.wine/drive_c/users/sambu/Local Settings/Application Data/Programs/Python/Python39/python.exe"
+        
         And after we can download any symbols we want like
         mt5-download -b <broker namespace> -i <timeframe only minute level number> -y <from starting year until now> -s <list of symbols spaced>
 
