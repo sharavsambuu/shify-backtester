@@ -1,4 +1,5 @@
 # About the Shify backtester
+
 Well, I needed to know whats going on behind the scene.
 And also I want to iterate faster when trying new strategies.
 In that regards, I've already tried some other libraries like Zipline etc
@@ -21,9 +22,11 @@ So whats inside my mind are currently followings :
     - Use common libraries like TALib, quantstats
 
 
+
 # Install
 
     pip install git+https://github.com/sharavsambuu/shify-backtester
+
 
 
 # Usage
@@ -69,14 +72,17 @@ So whats inside my mind are currently followings :
         shify run -s hello.py
 
 
+
 # Examples
 
     https://github.com/sharavsambuu/shify-examples
 
 
+
 # Some downloadable asset list
 
     btcusdt ethusdt bnbusdt xrpusdt dogeusdt maticusdt solusdt dotusdt ltcusdt shibusdt trxusdt avaxusdt linkusdt uniusdt atomusdt xmrusdt etcusdt xlmusdt bchusdt filusdt ldousdt hbarusdt aptusdt vetusdt nearusdt apeusdt algousdt qntusdt icpusdt eosusdt grtusdt ftmusdt stxusdt manausdt thetausdt aaveusdt xtzusdt egldusdt cfxusdt flowusdt axsusdt sandusdt imxusdt chzusdt crvusdt cakeusdt opusdt klayusdt snxusdt minausdt dashusdt fxsusdt gmxusdt runeusdt lrcusdt zilusdt rndrusdt maskusdt sxpusdt injusdt 1inchusdt batusdt kavausdt enjusdt cvxusdt woousdt icxusdt compusdt galausdt arusdt oneusdt ensusdt wavesusdt kdausdt kncusdt paxgusdt idusdt renusdt dydxusdt hookusdt 
+
 
 
 # Tasks
@@ -93,6 +99,7 @@ So whats inside my mind are currently followings :
 
 
 # References
+
     - Talib should be compiled from the source code
         https://github.com/TA-Lib/ta-lib-python
     - Create custom python library
