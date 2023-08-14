@@ -111,6 +111,8 @@ So whats inside my mind are currently followings :
         https://www.quantstart.com/articles/Successful-Backtesting-of-Algorithmic-Trading-Strategies-Part-I/
     - Building a Backtesting Framework in Python from Scratch
         https://www.qmr.ai/building-a-backtesting-framework-in-python-from-scratch/
+    - Working around windows stuffs
+        https://www.youtube.com/watch?v=Fim4rwyjYrs
     
 
 
