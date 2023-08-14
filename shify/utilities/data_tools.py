@@ -1,7 +1,5 @@
 import argparse
 
-from shify.utilities import exchange_binance as binance
-from shify.utilities import exchange_mt5     as emt5
 
 
 def binance_download():
@@ -17,6 +15,7 @@ def binance_download():
 
     print("##### data_tools:binance_download")
 
+    from shify.utilities import exchange_binance as binance
     binance.download(market_type=market_type, interval=interval, symbol_list=symbol_list)
 
     pass
@@ -37,4 +36,5 @@ def mt5_download():
 
     print("##### data_tools:mt5_download")
 
+    from shify.utilities import exchange_mt5 as emt5
     emt5.download(broker_name=broker_name, interval=interval, from_year=from_year, symbol_list=symbol_list)
