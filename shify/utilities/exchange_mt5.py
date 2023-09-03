@@ -38,17 +38,18 @@ def fetch_data(instrument, timeframe=1, shift=0, lookback_size=100):
     df = pd.DataFrame(rates)
     df['datetime'] = pd.to_datetime(df['time'], unit='s').dt.tz_localize(utc_tz)
     df.rename(columns={
-        "open"       : "Open" , 
-        "high"       : "High" ,
-        "low"        : "Low"  ,
-        "close"      : "Close",
-        "tick_volume": "Volume"
-        }, inplace=True)
+        "open"       : "Open"  , 
+        "high"       : "High"  ,
+        "low"        : "Low"   ,
+        "close"      : "Close" ,
+        "tick_volume": "Volume",
+        "spread"     : "Spread"
+       }, inplace=True)
     df = df.set_index(pd.DatetimeIndex(df['datetime']))
     
     mt5.shutdown()
 
-    return df[['Open', 'High', 'Low', 'Close', 'Volume']]
+    return df[['Open', 'High', 'Low', 'Close', 'Volume', 'Spread', 'real_volume']]
 
 
 def collect_history(folder_path, instrument, timeframe, from_year, lookback_size=100):
