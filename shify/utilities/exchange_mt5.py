@@ -52,7 +52,7 @@ def fetch_data(instrument, timeframe=1, shift=0, lookback_size=100):
     return df[['Open', 'High', 'Low', 'Close', 'Volume', 'Spread', 'real_volume']]
 
 
-def collect_history(folder_path, instrument, timeframe, from_year, lookback_size=100):
+def collect_history(folder_path, instrument, timeframe, from_year, lookback_size, real_volume):
     print(f"downloading {instrument} ...")
     from_datetime = f"{from_year}-01-01 00:00:00"
     to_datetime   = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
@@ -71,11 +71,14 @@ def collect_history(folder_path, instrument, timeframe, from_year, lookback_size
     all_df = all_df.iloc[:-1]
     all_df = all_df["2000-01-01":]
 
+    if not real_volume:
+        all_df = all_df.drop('real_volume', axis=1)
+
     all_df.to_csv(f"{folder_path}/{instrument}.csv", header=True)
     print(f"saved to {folder_path}/{instrument}.csv")
 
 
-def download(broker_name, interval, from_year, symbol_list):
+def download(broker_name, interval, from_year, symbol_list, real_volume):
     print(f"broker : {broker_name}, interval : {interval}, from year : {from_year}")
     print(f"symbols : {symbol_list}")
 
@@ -84,7 +87,7 @@ def download(broker_name, interval, from_year, symbol_list):
             os.makedirs(folder_path)
     
     for symbol in symbol_list:
-        collect_history(folder_path, symbol, int(interval), from_year, lookback_size=1000)
+        collect_history(folder_path, symbol, int(interval), from_year, lookback_size=1000, real_volume=real_volume)
         
     pass
 
