@@ -74,8 +74,8 @@ def collect_history(folder_path, instrument, timeframe, from_year, lookback_size
     if not real_volume:
         all_df = all_df.drop('real_volume', axis=1)
 
-    all_df.to_csv(f"{folder_path}/{instrument}.csv", header=True)
-    print(f"saved to {folder_path}/{instrument}.csv")
+    all_df.to_csv(f"{folder_path}/{instrument}-{timeframe}.csv", header=True)
+    print(f"saved to {folder_path}/{instrument}-{timeframe}.csv")
 
 
 def download(broker_name, interval, from_year, symbol_list, real_volume):

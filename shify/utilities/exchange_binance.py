@@ -124,9 +124,9 @@ def download(market_type, interval, symbol_list):
 
             output_folder = f"./data/binance/klines/{market_type}_{interval}"
             os.makedirs(output_folder, exist_ok=True)
-            all_df.to_csv(f"{output_folder}/{symbol}.csv", header=True)
+            all_df.to_csv(f"{output_folder}/{symbol}-{interval}.csv", header=True)
 
-            print(f"saved to {output_folder}/{symbol}.csv")
+            print(f"saved to {output_folder}/{symbol}-{interval}.csv")
 
         except Exception as e:
             print(f"Exception at processing {symbol}")
